@@ -7,11 +7,14 @@ tags: []
 categories: []
 comment : true
 ---
+
+{{<aplayer server="netease" type="song" id="28283137">}}
+
 这是一篇测试文章。
 
 
 
-{{ < aplayer server="netease" id="26851338" type="song" > }}
+
 
 
 {{< neodb "https://neodb.social/movie/1bgVODaWCBKlCQ1AuGlLzC" >}}
