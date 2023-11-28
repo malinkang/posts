@@ -1,7 +1,6 @@
 ---
 title: 纳瓦尔宝典读书笔记
 date: 2023-05-16T01:04:00.000Z
-featured_image: https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
 draft: false
 tags: []
 categories: []

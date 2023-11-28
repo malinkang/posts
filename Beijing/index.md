@@ -2,7 +2,7 @@
 title: "来北京11年"
 description: 
 date: 2023-08-10T15:28:05+08:00
-featured_image: images/ticket.jpg
+image: https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 math: 
 license: 
 hidden: false

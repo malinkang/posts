@@ -1,7 +1,7 @@
 ---
 title: 悠然
 date: 2022-03-29T01:08:00.000Z
-featured_image: https://images.unsplash.com/photo-1552819289-824d37ca69d2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb
+image: https://drive.malinkang.com/api/raw/?path=/Images/WechatIMG26.jpg
 draft: False
 tags: ['生活']
 categories: []
