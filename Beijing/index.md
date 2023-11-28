@@ -33,12 +33,7 @@ tags: [生活]
 
 21年5月份的时候接到了面试通知，一面是电话面试，过几天通知二面，要去现场面。因为面试公司距离我上班的公司很近，所以下午休息的时候骑自行车过去。第一次跑错了地方，眼看过了约定的时间，就想着算了不去了，后来hr又打电话说面试官等着你呢，然后我又骑车赶过去。过几天通知我入职，然后就进入了北京快乐茄科技有限公司。这也是我待过最Nice的一家公司，上下班不打卡，所有的公积金保险都按照标准的交，其他福利也都不错，而且也不是很忙。2023年8月份因为业务拆分我们整个部门拆分出去独立成一个公司了，也就是现在的深聚科技。
 
-{{< gallery match="images/shareit.jpg" sortOrder="asc" rowHeight="250" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
-
-{{< gallery match="images/adsconflux.jpg" sortOrder="asc" rowHeight="250" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 以上是我来北京的工作经历，在这里也结识了一些新朋友，最主要的认识了我的老婆。我们从掌控优教相识，相爱，于2017年7月领证，2018年5月2号举行婚礼。2021年的端午节发现老婆怀孕，2022年1月29，女儿出生。11年从孤身一人来到北京，到现在一家人都在这边。自己从23岁到34岁，庆幸自己当初逃离工厂选择了自己还算满意的路，下一个十年继续努力。
-
-{{< gallery match="images/family.jpg" sortOrder="asc" rowHeight="250" margins="5" thumbnailResizeOptions="600x600 q90 Lanczos" showExif=true previewType="blur" embedPreview=true loadJQuery=true >}}
 
 
