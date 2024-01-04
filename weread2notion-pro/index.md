@@ -1,7 +1,7 @@
 ---
-title: "WeRead2Notion使用文档"
+title: "WeRead2Notion-Pro使用文档"
 description: 
-date: 2023-09-10T15:28:05+08:00
+date: 2024-01-03T15:28:05+08:00
 image: https://images.unsplash.com/photo-1663813251302-e5d2c7199e86?q=80&w=2660&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 math: 
 license: 
@@ -14,11 +14,13 @@ tags:
     - WeRead
 ---
 
+* [预览效果](https://malinkang.notion.site/534a7684b30e4a879269313f437f2185?pvs=4)
+
 ## 使用
 
 ### Fork工程
 
-打开[Weread2Notion](https://github.com/malinkang/weread2notion)，点击右上角的Fork（顺便点个star谢谢）
+打开[Weread2Notion](https://github.com/malinkang/weread2notion-pro)，点击右上角的Fork（顺便点个star谢谢）
 
 ![](images/fork.jpg)
 
@@ -47,7 +49,7 @@ tags:
 
 ### 复制Notion模板
 
-1. 浏览器打开模板[https://malinkang.notion.site/e27842548a6d4a81bc7aea736d90d6dd?v=b255858d3eaa409f97f1ecb32a14a5b6&pvs=4](https://malinkang.notion.site/e27842548a6d4a81bc7aea736d90d6dd?v=b255858d3eaa409f97f1ecb32a14a5b6&pvs=4)，点击右上角的Duplicate复制。
+1. 浏览器打开模板[https://malinkang.notion.site/13d2e1548f024687a42ec68a79a01c62?pvs=4](https://malinkang.notion.site/13d2e1548f024687a42ec68a79a01c62?pvs=4)，点击右上角的Duplicate复制。
 
 ![](images/duplicate.jpg)
 
@@ -57,6 +59,30 @@ tags:
 
 3. 点击右上角的Share，然后点击Copy link获取database的链接，获取链接后比如 https://malinkang.notion.site/e27842548a6d4a81bc7aea736d90d6dd?v=b255858d3eaa409f97f1ecb32a14a5b6&pvs=4 中间的e27842548a6d4a81bc7aea736d90d6dd就是DatabaseID
 ![](images/copy.jpg)
+
+我们要依次获取下图这10个Datebase的ID。依次选中Database，然后按照上面的操作获取ID。
+
+{{< notice warning >}}注意不是获取阅读这个Page的ID{{< /notice >}}
+
+![](images/database.jpg)
+
+
+每个ID对应一个KEY，对应关系如下：
+
+| KEY   |      数据库名字      |
+|----------|:-------------:|
+| BOOK_DATABASE_ID|  书架 |
+| REVIEW_DATABASE_ID|    笔记   |
+| BOOKMARK_DATABASE_ID| 划线 |
+| CATEGORY_DATABASE_ID| 分类 |
+|AUTHOR_DATABASE_ID| 作者 |
+|CHAPTER_DATABASE_ID| 章节 |
+|DAY_DATABASE_ID| 日 |
+|WEEK_DATABASE_ID| 周|
+|MONTH_DATABASE_ID| 月 |
+|YEAR_DATABASE_ID| 年 |
+
+{{< notice warning >}} 这一步因为涉及的数据库比较多，所以非常容易出错，在获取的过程建议直接将KEY对应好，后面填的时候才不容易出错。{{< /notice >}}
 
 ### 在Github的Secrets中添加变量
 
