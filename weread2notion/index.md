@@ -16,11 +16,30 @@ tags:
 
 ## 使用
 
+{{< notice warning >}} 
+Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同，切勿用错模板。
+Weread2Notion-Pro教程：https://malinkang.com/posts/weread2notion-Pro/
+热力图使用教程：https://malinkang.com/posts/github_heatmap/
+{{< /notice >}}
+
 ### Fork工程
 
 打开[Weread2Notion](https://github.com/malinkang/weread2notion)，点击右上角的Fork（顺便点个star谢谢）
 
 ![](images/fork.jpg)
+
+
+### 权限
+
+确保你打开了读写权限。
+
+依次选择Settings->Actions->General，然后下拉，找到Workflow permissions，如果没有选中Read and write permissions，请选中，然后点下面的save保存。
+
+![](images/permissions1.jpg)
+
+
+![](images/permissions2.jpg)
+
 
 ### 获取微信读书Cookie
 
@@ -114,13 +133,6 @@ tags:
 
 当然你也可以上面使用中提到的步骤重新来一遍。
 
-## 群
-
-欢迎加入微信群讨论。使用中遇到的任何问题，包括Notion的使用，微信读书组队打卡，后续的更新都会在群里讨论。
-
-
-![](images/group.jpg)
-
 ## 捐赠
 
 如果你觉得项目对你有帮助，可以捐赠。我也会不断的优化项目，并做出其他开源的项目。
@@ -133,3 +145,17 @@ tags:
 ### 支付宝
 
 ![](images/alipay.jpg)
+
+## 付费解答
+
+有问题先自行解决，往往失败都是一些小细节没注意导致的。我的文档写的已经足够详细，按照文档来操作基本都能成功。你也可以尝试在群里咨询。不要直接加我微信来让我来解答，这个项目我已经投入了大量时间来开发维护，实在没有更多的精力来一对一解答。如果实在解决不了，可以付费一对一咨询，30元一位。付完款可以微信私聊我。
+
+![](images/wexin.jpg)
+
+## 群
+
+欢迎加入微信群讨论。使用中遇到的任何问题，包括Notion的使用，微信读书组队打卡，后续的更新都会在群里讨论。
+
+
+![](images/group.jpg)
+

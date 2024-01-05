@@ -18,11 +18,31 @@ tags:
 
 ## 使用
 
+{{< notice warning >}} 
+Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同，切勿用错模板。
+Weread2Notion教程：https://malinkang.com/posts/weread2notion/
+热力图使用教程：https://malinkang.com/posts/github_heatmap/
+{{< /notice >}}
+
 ### Fork工程
 
-打开[Weread2Notion](https://github.com/malinkang/weread2notion-pro)，点击右上角的Fork（顺便点个star谢谢）
+打开[Weread2Notion-Pro](https://github.com/malinkang/weread2notion-pro)，点击右上角的Fork（顺便点个star谢谢）
 
 ![](images/fork.jpg)
+
+### 权限
+
+确保你打开了读写权限。
+
+依次选择Settings->Actions->General，然后下拉，找到Workflow permissions，如果没有选中Read and write permissions，请选中，然后点下面的save保存。
+
+![](images/permissions1.jpg)
+
+
+![](images/permissions2.jpg)
+
+
+
 
 ### 获取微信读书Cookie
 
@@ -57,32 +77,13 @@ tags:
 
 ![](images/connections.jpg)
 
-3. 点击右上角的Share，然后点击Copy link获取database的链接，获取链接后比如 https://malinkang.notion.site/e27842548a6d4a81bc7aea736d90d6dd?v=b255858d3eaa409f97f1ecb32a14a5b6&pvs=4 中间的e27842548a6d4a81bc7aea736d90d6dd就是DatabaseID
+3. 点击右上角的Share，然后点击Copy link获取页面的链接。
 ![](images/copy.jpg)
 
-我们要依次获取下图这10个Datebase的ID。依次选中Database，然后按照上面的操作获取ID。
 
-{{< notice warning >}}注意不是获取阅读这个Page的ID{{< /notice >}}
-
-![](images/database.jpg)
+{{< notice warning >}} 这里是通过数据库的名字来自动获取对应的ID的，所以请先不要修改数据库的名字。{{< /notice >}}
 
 
-每个ID对应一个KEY，对应关系如下：
-
-| KEY   |      数据库名字      |
-|----------|:-------------:|
-| BOOK_DATABASE_ID|  书架 |
-| REVIEW_DATABASE_ID|    笔记   |
-| BOOKMARK_DATABASE_ID| 划线 |
-| CATEGORY_DATABASE_ID| 分类 |
-|AUTHOR_DATABASE_ID| 作者 |
-|CHAPTER_DATABASE_ID| 章节 |
-|DAY_DATABASE_ID| 日 |
-|WEEK_DATABASE_ID| 周|
-|MONTH_DATABASE_ID| 月 |
-|YEAR_DATABASE_ID| 年 |
-
-{{< notice warning >}} 这一步因为涉及的数据库比较多，所以非常容易出错，在获取的过程建议直接将KEY对应好，后面填的时候才不容易出错。{{< /notice >}}
 
 ### 在Github的Secrets中添加变量
 
@@ -94,7 +95,7 @@ tags:
 
 ![](images/secret2.jpg)
 
-3. 同理，继续点击New repository secret，分别增加变量NOTION_TOKEN和NOTION_DATABASE_ID。最终的结果如下图所示。
+3. 同理，继续点击New repository secret，分别增加变量名NOTION_TOKEN和NOTION_PAGE。NOTION_TOKEN的值为前面获取的NOTION_TOKEN值，NOTION_PAGE值为前面获取的页面链接，最终的结果如下图所示。
 
 ![](images/secret3.jpg)
 
@@ -132,20 +133,12 @@ tags:
 > 本项目设置的是utc时间的0点，如果你在中国，那就是每天8点同步。不过据我观察，Github这个可能有延迟，会在每天8点零几分同步。你也可以自行修改同步时间，具体参考[这里](https://docs.github.com/zh/actions/using-workflows/events-that-trigger-workflows#schedule)。
 
 
-
 ## 升级
 
 打开你Fork的项目，点击Sync fork进行同步
 ![](https://docs.github.com/assets/cb-75616/mw-1440/images/help/repository/sync-fork-dropdown.webp)
 
 当然你也可以上面使用中提到的步骤重新来一遍。
-
-## 群
-
-欢迎加入微信群讨论。使用中遇到的任何问题，包括Notion的使用，微信读书组队打卡，后续的更新都会在群里讨论。
-
-
-![](images/group.jpg)
 
 ## 捐赠
 
@@ -159,3 +152,18 @@ tags:
 ### 支付宝
 
 ![](images/alipay.jpg)
+
+## 付费解答
+
+有问题先自行解决，往往失败都是一些小细节没注意导致的。我的文档写的已经足够详细，按照文档来操作基本都能成功。你也可以尝试在群里咨询。不要直接加我微信来让我来解答，这个项目我已经投入了大量时间来开发维护，实在没有更多的精力来一对一解答。如果实在解决不了，可以付费一对一咨询，30元一位。付完款可以微信私聊我。
+
+![](images/wexin.jpg)
+
+
+## 群
+
+欢迎加入微信群讨论。使用中遇到的任何问题，包括Notion的使用，微信读书组队打卡，后续的更新都会在群里讨论。
+
+
+![](images/group.jpg)
+
