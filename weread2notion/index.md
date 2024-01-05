@@ -18,8 +18,9 @@ tags:
 
 {{< notice warning >}} 
 Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同，切勿用错模板。
-Weread2Notion-Pro教程：https://malinkang.com/posts/weread2notion-Pro/
-热力图使用教程：https://malinkang.com/posts/github_heatmap/
+
+* Weread2Notion-Pro教程：[https://malinkang.com/posts/weread2notion-pro/](https://malinkang.com/posts/weread2notion-pro/)
+* 热力图使用教程：[https://malinkang.com/posts/github_heatmap/](https://malinkang.com/posts/github_heatmap/)
 {{< /notice >}}
 
 ### Fork工程
