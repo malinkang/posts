@@ -50,7 +50,7 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 {{< notice tip >}} 
 如果没有内容显示，请刷新下浏览器。
 
-建议使用Chrome浏览器，有的小伙伴使用QQ浏览器拿到的Cookie一直不能有。
+建议使用Chrome浏览器，有的小伙伴使用QQ浏览器拿到的Cookie一直不能用。
 {{< /notice >}}
 
 ![](images/weread.jpg)

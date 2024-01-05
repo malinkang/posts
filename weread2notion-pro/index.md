@@ -42,9 +42,6 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 
 ![](images/permissions2.jpg)
 
-
-
-
 ### 获取微信读书Cookie
 
 1. 浏览器打开[网页版微信读书](https://weread.qq.com/)扫码登录
@@ -53,7 +50,7 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 {{< notice tip >}} 
 如果没有内容显示，请刷新下浏览器。
 
-建议使用Chrome浏览器，有的小伙伴使用QQ浏览器拿到的Cookie一直不能有。
+建议使用Chrome浏览器，有的小伙伴使用QQ浏览器拿到的Cookie一直不能用。
 {{< /notice >}}
 
 ![](images/weread.jpg)
@@ -104,9 +101,13 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 
 ### 运行
 
-上面配置完成之后，打开你Fork的项目，依次点击Actions->weread sync-> Run workflow，就可以运行了。
+上面配置完成之后，打开你Fork的项目，依次点击Actions->weread note sync-> Run workflow，就可以运行了。
 
 ![](images/run.jpg)
+
+以相同的方式运行read time sync。weread note sync主要用来同步书籍、笔记和划线。read time sync 用来生成热力图和同步阅读时长。
+
+![](images/run2.jpg)
 
 ## 问题排查
 
