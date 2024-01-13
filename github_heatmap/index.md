@@ -44,6 +44,34 @@ tags: [Weread,微信读书,Notion]
 
 ![](images/4.jpg)
 
+## 设置年
+
+依次选择Settings->Secrets and variables -> variables-> New repository variable.
+
+![](images/9.jpg)
+
+添加变量名为year，值为年份。如果要显示多个年份，比如2018到2024年的就输入2018-2024。主要微信读书只能拿到2018年之后的数据，所以如果输入2016-2024，还是只会显示2018-2024的数据。
+
+## 设置颜色
+
+和上面设置Year一样依次选择Settings->Secrets and variables -> variables-> New repository variable。
+具体的变量名可以参考下表中的变量名，值为色值。
+
+|   变量名	|   变量说明	|
+|---	|---	|
+|   BACKGROUND_COLOR	|   背景颜色	|
+|   DOM_COLOR	|   未填充的色块	|
+|   TRACK_COLOR	|   一级颜色	| 
+|   SPECIAL_COLOR	|   二级颜色	| 
+|   SPECIAL_COLOR2	|   三级级颜色	| 
+|   TEXT_COLOR	|   文字颜色	| 
+
+![](images/8.jpg)
+
+variables示例
+
+![](images/11.jpg)
+
 ## 手动运行
 
 配置完成之后，你就可以手动运行一下。
