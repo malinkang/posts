@@ -134,6 +134,26 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 
 > 本项目设置的是utc时间的0点，如果你在中国，那就是每天8点同步。不过据我观察，Github这个可能有延迟，会在每天8点零几分同步。你也可以自行修改同步时间，具体参考[这里](https://docs.github.com/zh/actions/using-workflows/events-that-trigger-workflows#schedule)。
 
+3. 模板中哪些可以修改
+
+> 模板中的Page标题可以修改，Database中的Formula和Rollup类型的列可以修改。要修改数据库的名字需要，按照以下步骤。
+> 依次选择Settings->Secrets and variables -> variables-> New repository variable。
+
+具体的变量名可以参考下表中的变量名，值为你想要修改的名字。
+
+| 变量名                  | 当前数据库的名字 |
+|-----------------------|-------|
+| BOOK_DATABASE_NAME    | 书架  |
+| REVIEW_DATABASE_NAME  | 笔记  |
+| BOOKMARK_DATABASE_NAME| 划线  |
+| DAY_DATABASE_NAME     | 日    |
+| WEEK_DATABASE_NAME    | 周    |
+| MONTH_DATABASE_NAME   | 月    |
+| YEAR_DATABASE_NAME    | 年    |
+| CATEGORY_DATABASE_NAME| 分类  |
+| AUTHOR_DATABASE_NAME  | 作者  |
+| CHAPTER_DATABASE_NAME | 章节  |
+
 
 ## 升级
 
