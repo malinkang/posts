@@ -126,17 +126,22 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 
 ## 问题解答
 
-1. 为什么有的书没有同步过来
+1. WeRead2Notion和WeRead2Notion-Pro有什么区别
 
-> 本项目只会同步划线或者做了笔记的书，书架里的书如果没有划线或者做笔记是不会同步的。后续可能会考虑增加同步书架中的书。
+> WeRead2Notion不支持在笔记中添加自己的笔记，每次有新笔记会删除原有的笔记。WeRead2Notion-Pro支持添加自己的笔记，每次更新不会覆盖笔记。WeRead2Notion功能更加简洁，同步速度更快。WeRead2Notion-Pro支持按照年、月、周、日的阅读时长、笔记数阅读数的时间统计，支持数据可视化。所以选用哪个看个人喜好，也可以两个都用。
 
-2. 每天何时同步
+2. 如何自动运行
 
-> 本项目设置的是utc时间的0点，如果你在中国，那就是每天8点同步。不过据我观察，Github这个可能有延迟，会在每天8点零几分同步。你也可以自行修改同步时间，具体参考[这里](https://docs.github.com/zh/actions/using-workflows/events-that-trigger-workflows#schedule)。
+> Github Action提供每日定时自动运行程序的功能。之前有的朋友会问，我关了电脑会同步吗，该脚本运行在Github的服务器上，并不是运行在你的电脑上，所以你关机并不会影响程序自动运行。
 
-3. 模板中哪些可以修改
 
-> 模板中的Page标题可以修改，Database中的Formula和Rollup类型的列可以修改。要修改数据库的名字需要，按照以下步骤。
+3. 每天何时同步
+
+> 笔记设置的是utc时间的0点同步，如果你在中国，那就是每天8点同步。不过据我观察，Github这个可能有延迟。时间同步是每3个小时运行一次。你也可以自行修改同步时间，具体参考[这里](https://docs.github.com/zh/actions/using-workflows/events-that-trigger-workflows#schedule)。需要注意的是Github每个月2000分钟有免费的额度，如果改的过于频繁可能会导致额度不够。
+
+4. 模板中哪些可以修改
+
+> Database中的Formula和Rollup类型的属性名可以修改，其他的属性名不支持修改，因为代码中是通过属性的名字来增加修改这个属性的，修改了名字程序就无法正常运行。要修改数据库的名字需要按照以下步骤。
 > 依次选择Settings->Secrets and variables -> variables-> New repository variable。
 
 具体的变量名可以参考下表中的变量名，值为你想要修改的名字。
@@ -153,6 +158,16 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 | CATEGORY_DATABASE_NAME| 分类  |
 | AUTHOR_DATABASE_NAME  | 作者  |
 | CHAPTER_DATABASE_NAME | 章节  |
+
+除此之外，其他数据可以任意修改，包括页面的布局都不会影响程序运行。
+
+5. 年月周天中的进度是什么
+
+> 这里的进度我设置的是每天1小时，每周7小时，每月30小时，每年365小时。你可以自行修改公式设置你的进度。
+
+6. 表中的时间是什么
+
+> 如果这本书你读完了，时间是读完的时间，如果没有读完，就是你最后阅读的时间。表中的日，周，月，年都是根据这个时间来设置的。
 
 
 ## 升级
