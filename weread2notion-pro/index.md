@@ -202,5 +202,5 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 欢迎加入微信群讨论。使用中遇到的任何问题，包括Notion的使用，微信读书组队打卡，后续的更新都会在群里讨论。
 
 
-![](images/group.jpg)
+![](https://drive.malinkang.com/api/raw/?path=/Images/group.jpg)
 
