@@ -19,5 +19,3 @@ comment : true
 
 <!-- {{< neodb "https://neodb.social/movie/1bgVODaWCBKlCQ1AuGlLzC" >}}
 {{< neodb "https://neodb.social/book/5CKFwtnys6r2ghnHQTLAv4" >}}
-
-{{< douban "https://book.douban.com/subject/35496106/" >}} -->

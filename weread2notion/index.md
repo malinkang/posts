@@ -2,7 +2,7 @@
 title: "WeRead2Notion使用文档"
 description: 
 date: 2023-09-10T15:28:05+08:00
-image: https://images.unsplash.com/photo-1663813251302-e5d2c7199e86?q=80&w=2660&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+image: https://images.malinkang.com/2024/03/e1bc45eb87ec93a249edf163a9115874.png
 math: 
 license: 
 hidden: false
@@ -14,7 +14,7 @@ tags:
     - WeRead
 ---
 
-## 使用
+WeRead2Notion用于将微信读书的笔记自动同步到Notion。该项目不支持在Notion中添加自己的笔记，每次有笔记更新会删除原有笔记，需要添加自己的笔记可以使用[WeRead2Notion-Pro](https://malinkang.com/posts/weread2notion-pro/)。
 
 {{< notice warning >}} 
 Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同，切勿用错模板。
@@ -23,12 +23,17 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 * 热力图使用教程：[https://malinkang.com/posts/github_heatmap/](https://malinkang.com/posts/github_heatmap/)
 {{< /notice >}}
 
-### Fork工程
+## 预览
+
+![3e54d178-4e8d-4a06-a36d-664a861b364c](https://images.malinkang.com/2024/03/7403ee39bcd57097005697d3c4a06841.png)
+
+也可以打开网页版本查看效果：https://book.malinkang.com/
+
+## 1. Fork工程
 
 打开[Weread2Notion](https://github.com/malinkang/weread2notion)，点击右上角的Fork（顺便点个star谢谢）
 
-![](images/fork.jpg)
-
+![](https://images.malinkang.com/2024/03/fc6be407e45f0e3a3067252dd2c51c73.jpg)
 
 ### 权限
 
@@ -36,10 +41,10 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 
 依次选择Settings->Actions->General，然后下拉，找到Workflow permissions，如果没有选中Read and write permissions，请选中，然后点下面的save保存。
 
-![](images/permissions1.jpg)
+![](https://images.malinkang.com/2024/03/01c28b0dd2e8c2629a22e7f68db6216d.jpg)
 
 
-![](images/permissions2.jpg)
+![](https://images.malinkang.com/2024/03/d7824c3488e6e1d1c9e6b75d6aba86f3.jpg)
 
 
 ### 获取微信读书Cookie
@@ -53,66 +58,57 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 建议使用Chrome浏览器，有的小伙伴使用QQ浏览器拿到的Cookie一直不能用。
 {{< /notice >}}
 
-![](images/weread.jpg)
+![](https://images.malinkang.com/2024/03/2a26e0b6d2a5a3b36711e91037b837f3.jpg)
 
-### 获取NotionToken
+### 授权
 
-1. 浏览器打开[https://www.notion.so/my-integrations](https://www.notion.so/my-integrations)点击New integration按钮，输入name后点Submit。
+1. 浏览器打开 https://api.notion.com/v1/oauth/authorize?client_id=801fd03a-a44f-41af-9a17-feb048b4bbdd&response_type=code&owner=user&redirect_uri=https%3A%2F%2Fnotion-auth.malinkang.com%2Fweread2notion-oauth-callback
 
-![](images/integrations.jpg)
+2. 然后点击Next->Allow access
 
-2. 提交完成后，进入Secrets页面，先点击Show，然后点击Copy复制，后面需要用到
+![image-20240326111124731](https://images.malinkang.com/2024/03/6e8adeccaf9fddef746300c3458b1967.png)
 
-![](images/integrations2.jpg)
+![image-20240326111250623](https://images.malinkang.com/2024/03/9ddc65490e193f00d4f29fbeb70b24fe.png)
 
-### 复制Notion模板
+3. 点击复制按钮，复制NOTION_TOKEN和NOTION_PAGE的值。
 
-1. 浏览器打开模板[https://malinkang.notion.site/e27842548a6d4a81bc7aea736d90d6dd?v=b255858d3eaa409f97f1ecb32a14a5b6&pvs=4](https://malinkang.notion.site/e27842548a6d4a81bc7aea736d90d6dd?v=b255858d3eaa409f97f1ecb32a14a5b6&pvs=4)，点击右上角的Duplicate复制。
-
-![](images/duplicate.jpg)
-
-2. 打开你刚复制的模板，点击右上角的三个点，找到`Connections`，然后添加你创建的Integration。
-
-![](images/connections.jpg)
-
-3. 点击右上角的Share，然后点击Copy link获取database的链接，获取链接后比如 https://malinkang.notion.site/e27842548a6d4a81bc7aea736d90d6dd?v=b255858d3eaa409f97f1ecb32a14a5b6&pvs=4 中间的e27842548a6d4a81bc7aea736d90d6dd就是DatabaseID
-![](images/copy.jpg)
+   ![复制](https://images.malinkang.com/2024/03/42c04cb1e6ab95eed832f33462c96831.jpg)
 
 ### 在Github的Secrets中添加变量
 
 1. 打开你fork的工程，点击Settings->Secrets and variables->New repository secret
 
-![](images/secret.jpg)
+![](https://images.malinkang.com/2024/03/660acb8a4038af66e27fe0f993ef3aad.jpg)
 
 2. Name输入WEREAD_COOKIE，Secret输入框中填入你前面获取的微信读书Cookie，然后点击Add secret
 
-![](images/secret2.jpg)
+![](https://images.malinkang.com/2024/03/bd1bb31f901d9920bb1135c19e1ef304.jpg)
 
-3. 同理，继续点击New repository secret，分别增加变量NOTION_TOKEN和NOTION_DATABASE_ID。最终的结果如下图所示。
+3. 同理，继续点击New repository secret，分别增加变量NOTION_TOKEN和NOTION_PAGE。最终的结果如下图所示。
 
-![](images/secret3.jpg)
+![](https://images.malinkang.com/2024/03/cc1a34e23e251dec7f8fedc8d710912a.jpg)
 
-{{< notice warning >}} 注意这三个变量名一定要填写正确，一个字母都不能错，否则会同步失败。之前遇到过有的同学NOTION_DATABASE_ID写成NOTION_DATEBASE_ID。{{< /notice >}}
+{{< notice warning >}} 注意这三个变量名一定要填写正确，一个字母都不能错，否则会同步失败。{{< /notice >}}
 
 ### 运行
 
 上面配置完成之后，打开你Fork的项目，依次点击Actions->weread sync-> Run workflow，就可以运行了。
 
-![](images/run.jpg)
+![](https://images.malinkang.com/2024/03/58a654118607156d8a7dde7f6470504f.jpg)
 
 ## 问题排查
 
 1. 可以点击你Fork项目的Action，查看运行状态，绿色是成功，红色是失败。
 
-![](images/action.jpg)
+![](https://images.malinkang.com/2024/03/ee23baaf257d9fa16f6f95950cd1e585.jpg)
 
 {{< notice warning >}} 运行成功，只代表程序没有出错，不代表就一定同步数据，比如微信Cookie过期就不会报错。所以如果运行成功，Notion中没有数据的话，也可以通过下面第2步来查看日志{{< /notice >}}
 
 2.可以点进去查日志，来自行排查问题。
 
-![](images/action2.jpg)
+![](https://images.malinkang.com/2024/03/34089868d5569f92c9138ade3ba99428.jpg)
 
-![](images/action3.jpg)
+![](https://images.malinkang.com/2024/03/27ab73fed87b15a3a55d05423bd90167.jpg)
 
 
 ## 问题解答
@@ -129,10 +125,10 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 
 ## 升级
 
-打开你Fork的项目，点击Sync fork进行同步
-![](https://docs.github.com/assets/cb-75616/mw-1440/images/help/repository/sync-fork-dropdown.webp)
+如果我添加了新功能，你需要将自己的代码与我的代码进行同步。打开你Fork的项目，点击Sync fork进行同步，如果有冲突可以点击Discard那个按钮
+![image-20240326113307149](https://images.malinkang.com/2024/03/53c917e4bcfd70d0509a05680a2f10b4.png)
 
-当然你也可以上面使用中提到的步骤重新来一遍。
+
 
 ## 捐赠
 
@@ -141,22 +137,22 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 ### 微信
 
 
-![](images/wechat.jpg)
+![](https://images.malinkang.com/2024/03/d34f577490a32d4440c8a22f57af41da.jpg)
 
 ### 支付宝
 
-![](images/alipay.jpg)
+![](https://images.malinkang.com/2024/03/7fd0feb1145f19fab3821ff1d4631f85.jpg)
 
 ## 付费解答
 
 有问题先自行解决，往往失败都是一些小细节没注意导致的。我的文档写的已经足够详细，按照文档来操作基本都能成功。你也可以尝试在群里咨询。不要直接加我微信来让我来解答，这个项目我已经投入了大量时间来开发维护，实在没有更多的精力来一对一解答。如果实在解决不了，可以付费一对一咨询，30元一位。付完款可以微信私聊我。
 
-![](images/wexin.jpg)
+![](https://images.malinkang.com/2024/03/ca34d2b8c111f23126d94d3aaf55f5f3.jpg)
 
 ## 群
 
 欢迎加入微信群讨论。使用中遇到的任何问题，包括Notion的使用，微信读书组队打卡，后续的更新都会在群里讨论。
 
 
-![](https://drive.malinkang.com/api/raw/?path=/Images/group.jpg)
+![群](https://images.malinkang.com/group.jpg)
 
