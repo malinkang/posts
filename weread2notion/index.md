@@ -29,7 +29,7 @@ Weread2Notion和Weread2Notion-Pro是两个不同的项目，模板也不相同�
 
 也可以打开网页版本查看效果：https://book.malinkang.com/
 
-## 1. Fork工程
+### Fork工程
 
 打开[Weread2Notion](https://github.com/malinkang/weread2notion)，点击右上角的Fork（顺便点个star谢谢）
 
