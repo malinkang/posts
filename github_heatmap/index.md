@@ -25,10 +25,10 @@ tags: [Weread,微信读书,Notion]
 
 依次选择Settings->Actions->General，然后下拉，找到Workflow permissions，如果没有选中Read and write permissions，请选中，然后点下面的save保存。
 
-![](images/1.jpg)
+![](https://images.malinkang.com/2024/04/01c28b0dd2e8c2629a22e7f68db6216d.jpg)
 
 
-![](images/2.jpg)
+![](https://images.malinkang.com/2024/04/d7824c3488e6e1d1c9e6b75d6aba86f3.jpg)
 
 ## 设置NAME
 
@@ -38,17 +38,17 @@ tags: [Weread,微信读书,Notion]
 
 依次选择Settings->Secrets and variables -> New repository secret.
 
-![](images/3.jpg)
+![](https://images.malinkang.com/2024/04/c28135ce7ec0a597cd008e75ab645d14.jpg)
 
 输NAME和Secret，然后点 Add secret保存即可。
 
-![](images/4.jpg)
+![](https://images.malinkang.com/2024/04/e45b89ece1816660b2f5e35f8a72acb7.jpg)
 
 ## 设置年
 
 依次选择Settings->Secrets and variables -> variables-> New repository variable.
 
-![](images/9.jpg)
+![](https://images.malinkang.com/2024/04/4c2578f3dd27c7db4d8d2403c2e25ecb.jpg)
 
 添加变量名为year，值为年份。如果要显示多个年份，比如2018到2024年的就输入2018-2024。主要微信读书只能拿到2018年之后的数据，所以如果输入2016-2024，还是只会显示2018-2024的数据。
 
@@ -66,11 +66,13 @@ tags: [Weread,微信读书,Notion]
 |   SPECIAL_COLOR2	|   三级级颜色	| 
 |   TEXT_COLOR	|   文字颜色	| 
 
-![](images/8.jpg)
+![](https://images.malinkang.com/2024/04/521ec621b6acebc297d9700f9bfac1eb.jpg)
+
+
 
 variables示例
 
-![](images/11.jpg)
+![](https://images.malinkang.com/2024/04/e250d7e9952047eb327f7b0a397211d3.jpg)
 
 ## 手动运行
 
@@ -81,6 +83,5 @@ variables示例
 
 最终生成的图保存在OUT_FOLDER文件夹下。
 
-![](images/7.jpg)
-
+![](https://images.malinkang.com/2024/04/75c38b036cce0ff8cc23d3459defbcb7.jpg)
 

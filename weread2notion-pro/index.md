@@ -1,8 +1,10 @@
 ---
-title: "WeRead2Notion-Pro使用文档"
+title: "WeRead2NotionPro使用文档"
 description: 
 date: 2024-01-03T15:28:05+08:00
 image: https://images.malinkang.com/2024/03/19dd1580dd991c7985abea7724c87043.png
+cover: 
+    linkFullImages: https://images.malinkang.com/2024/03/19dd1580dd991c7985abea7724c87043.png
 math: 
 license: 
 hidden: false
