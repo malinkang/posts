@@ -67,15 +67,17 @@ name是你的Github的用户名，repository是你的仓库名。比如我的wer
 
 ![](https://images.malinkang.com/2024/07/ade2e856d164738843e224cb49c926e6.png)
 
-4. 点击添加操作，搜索快捷指令，然后选择打开快捷指令。
+4. 点击添加操作，搜索快捷指令，然后选择运行快捷指令。
 
-![](https://images.malinkang.com/2024/07/224a95a91cdafb65bcb2293d25f076a1.png)
+![](https://images.malinkang.com/2024/07/b7788d888e830365bf34668a3d32f326.png)
 
 5. 点击快捷指令，选择第一步我们获取的快捷指令
 
-![](https://images.malinkang.com/2024/07/60912bfd98a22412252fc0f4adf58b54.png)6. 最后点击下一步，然后关闭运行前询问。如果不关闭的话，每次运行这个自动化都会弹一个对话框询问是否运行这个自动化。关闭之后，可以无感运行这个 自动化。
+![](https://images.malinkang.com/2024/07/bff434f1bf16ab3fd8bb9f61ef345c91.png)
 
-![](https://images.malinkang.com/2024/07/10ecc3e239a763bd79adf25e42af5ebc.png)
+6. 最后点击下一步，然后关闭运行前询问。如果不关闭的话，每次运行这个自动化都会弹一个对话框询问是否运行这个自动化。关闭之后，可以无感运行这个 自动化。
+
+![](https://images.malinkang.com/2024/07/4ae414d5d036d0837b7a90de58cf6bb9.png)
 
 
 
@@ -87,9 +89,9 @@ name是你的Github的用户名，repository是你的仓库名。比如我的wer
 
 * 关闭Toggl时触发Toggle2Notion同步。
 
-* 关闭多邻国时出发Duolingo2Notion同步
+* 关闭多邻国时触发Duolingo2Notion同步
 
-* 关闭Keep时出发Keep2Notion同步
+* 关闭Keep时触发Keep2Notion同步
 
 * ...
 
@@ -97,5 +99,4 @@ name是你的Github的用户名，repository是你的仓库名。比如我的wer
 
 快捷指令的触发条件有很多，也可以通过设置固定时间来同步，你可以自行研究。
 
-
-
+另外之前我说每个月Github Action有2000分钟的限额，后来看了一下只针对私有仓库，公共仓库是不限额的，所以我们可以提高我们同步的频率，再也不用担心额度用不完了。
