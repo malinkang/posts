@@ -1,8 +1,8 @@
 ---
 title: "免费申请Notion教育Plus计划白嫖Notion图表"
 description: 
-date: 2024-02-27T09:40:05+08:00
-image: https://images.unsplash.com/photo-1663813251302-e5d2c7199e86?q=80&w=2660&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+date: 2024-09-12T09:40:05+08:00
+image: https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 math: 
 license: 
 hidden: false
@@ -70,12 +70,16 @@ tags:
 
 打开Notion，修改邮箱。
 
-![CleanShot 2024-09-12 at 09.29.31@2x](https://images.malinkang.com/2024/09/661aaa5c2b7113b4814caba988dc390c.png)
+![](https://images.malinkang.com/2024/09/661aaa5c2b7113b4814caba988dc390c.png)
 
 修改完成后，点击右下角的Upgrade plan。
 
-![CleanShot 2024-09-12 at 09.33.55@2x](https://images.malinkang.com/2024/09/ad302b67832fae717f8fd04d559d5df0.png)
+![](https://images.malinkang.com/2024/09/ad302b67832fae717f8fd04d559d5df0.png)
 
 然后点击Get the Education Plan，就可以升级为Education Plan了。升级为Education Plan之后，会提示让输入密码，这样即便是我们教育邮箱不能使用，还可以继续使用密码登录Notion。
 
-![CleanShot 2024-09-12 at 09.34.10@2x](https://images.malinkang.com/2024/09/00832d2ff5739fa553367303d1f3bd19.png)
+![](https://images.malinkang.com/2024/09/00832d2ff5739fa553367303d1f3bd19.png)
+
+## 参考
+
+* [ac.cn邮箱如何用教育邮箱申请notion Education Plus Plan](https://www.dajun.info/notion-Education-Plus-Plan)
